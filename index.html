@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gojaeng's Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: powderblue;
+  color: black;
+}
+
+
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 20%;
+  background-color: rgba(202, 202, 247, 0.864);
+  padding: 20px;
+  border-right:1px solid gray;
+}
+
+
+.main {
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(222, 231, 234);
+}
+.day{
+    font-size:medium;
+}
+ul{
+    text-decoration: underline; text-underline-position: under;
+}
+
+
+
+@media (max-width: 800px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Hello, I'm Gojaeng</h1>
+  
+</div>
+
+<div class="navbar">
+  <a href="https://blog.naver.com/gojh0727">Blog</a>
+  <a href="http://instagram.com/_jh727">Instagram</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <img src="https://blogpfthumb-phinf.pstatic.net/MjAyMjA4MDhfMTA3/MDAxNjU5OTYyMTY2Njg2.zwlt5iGBiUVlahBWHUF2yY0i9mgYsbvmwtpkRk7yjqYg.P1cthWd3Q5UgEcDWwcIuedoiJRKspyZbz5ZFyxAkR_sg.PNG.gojh0727/profileImage.png?type=w161">
+    <p>방학 때 맛 보는 <br>프론트엔드 공부</p>
+    <p>조금씩 조금씩 <br>공부해보기</p>
+  </div>
+  <div class="main">
+    <h2>Blah Blah~</h2>
+    <h5 class="day">Posting - 2023/1/20 </h5>
+    <p>Some introduce..</p>
+    <p>
+        <ol>
+            <li>Born: South Korea</li>
+            <br>
+            <li>Age: 25</li>
+            <br>
+            <li>Hobby
+                <ul>
+                    <li>Playing Piano and Guitar</li>
+                    <li>Traveling</li>
+                    <li>Meet Friend</li>
+                </ul>
+            </li>
+        </ol>
+        
+    </p>
+    <br>
+  </div>
+</div>
+
+
+<div class="footer">
+  <h2>Thank you.</h2>
+</div>
+
+</body>
+</html>
