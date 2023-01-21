@@ -47,7 +47,7 @@ body {
 }
 
 .side {
-  flex: 20%;
+  flex: 30%;
   background-color: rgba(202, 202, 247, 0.864);
   padding: 20px;
   border-right:1px solid gray;
@@ -55,7 +55,7 @@ body {
 
 
 .main {
-  flex: 80%;
+  flex: 70%;
   background-color: white;
   padding: 20px;
 }
@@ -66,18 +66,34 @@ body {
   text-align: center;
   background: rgb(222, 231, 234);
 }
-.day{
+.day, .song{
     font-size:medium;
 }
 ul{
     text-decoration: underline; text-underline-position: under;
 }
+.jul1{
+  padding: 10px;
+  text-align: justify;
+}
+.jul2{
+  padding:10px;
+  text-align: justify;
+}
+.hilarious{
+  display:flex;
+  text-align: justify;
+  border: 3px solid gray;
+  column-count: 2;
+}
+
 
 
 
 @media (max-width: 800px) {
-  .row, .navbar {   
-    flex-direction: column;
+  .row, .navbar,.hilarious {   
+    display:flex;
+    flex-direction: column; 
   }
 }
 
@@ -86,7 +102,7 @@ ul{
 <body>
 
 <div class="header">
-  <h1>Hello, I'm Gojaeng</h1>
+  <h1>Hello, Nice to meet you</h1>
   
 </div>
 
@@ -98,22 +114,24 @@ ul{
 <div class="row">
   <div class="side">
     <h2>About Me</h2>
-    <h5>Photo of me:</h5>
+    <h3>Photo of me:</h3>
     <img src="https://blogpfthumb-phinf.pstatic.net/MjAyMjA4MDhfMTA3/MDAxNjU5OTYyMTY2Njg2.zwlt5iGBiUVlahBWHUF2yY0i9mgYsbvmwtpkRk7yjqYg.P1cthWd3Q5UgEcDWwcIuedoiJRKspyZbz5ZFyxAkR_sg.PNG.gojh0727/profileImage.png?type=w161">
-    <p>방학 때 맛 보는 <br>프론트엔드 공부</p>
-    <p>조금씩 조금씩 <br>공부해보기</p>
+    <p>방학 때 맛 보는 <br>프론트엔드 공부</br></p>
+    <p>조금씩 조금씩 <br>공부해보기</br></p>
   </div>
   <div class="main">
     <h2>Blah Blah~</h2>
-    <h5 class="day">Posting - 2023/1/20 </h5>
+    <h3 class="day">Posting - 2023/1/20 </h3>
     <p>Some introduce..</p>
     <p>
         <ol>
             <li>Born: South Korea</li>
             <br>
             <li>Age: 25</li>
+            </br>
             <br>
             <li>Hobby
+            </br>
                 <ul>
                     <li>Playing Piano and Guitar</li>
                     <li>Traveling</li>
@@ -121,9 +139,65 @@ ul{
                 </ul>
             </li>
         </ol>
+        <h2>Any song</h2>
+    <h3 class="song">Charlie Puth - That's Hilarious </h3>
+    <p>
+      <div class="hilarious">
+        <div class="jul1">
+          Look how all the tables
+          Look how all the tables have turned
+          Guess you're finally realizin' how bad you messed it up
+          Girl, you're only makin'
+          Girl, you're only makin' it worse
+          When you call like you always do when you want someone
+          You took away a year
+          Of my fuckin' life and I can't get it back no more
+          So when I see those tears
+          Comin' out your eyes, I hope it's me they're for
+          You didn't love when you had me
+          But now you need me so badly
+          You can't be serious
+          That's hilarious
+          Thinkin' I would still want you
+          After the things you put me through
+          Yeah, you're delirious
+          That's hilarious
+        </div>
+        <div class="jul2">
+          Now you put the blame in (now you put the blame in)
+          Now you put the blame in reverse
+          Tryna make me feel guilty for everything you've done
+          You're another lesson (you're another lesson)
+          You're just another lesson I learned
+          Don't give your heart to a girl who's still got a broken one
+          You took away a year (took away a year)
+          Of my fuckin' life and I can't get it back no more
+          So when I see those tears (when I see those tears)
+          Comin' out your eyes, I hope it's me they're for
+          You didn't love when you had me
+          But now you need me so badly
+          You can't be serious
+          That's hilarious
+          Thinkin' I would still want you
+          After the things you put me through
+          Yeah, you're delirious (you're delirious)
+          That's hilarious (that's hilarious)
+          You didn't love when you had me
+          But now you need me so badly
+          You can't be serious (you can't be serious)
+          That's hilarious (that's hilarious)
+          Thinkin' I would still want you
+          After the things you put me through
+          Yeah, you're delirious (you're delirious)
+          That's hilarious (that's hilarious)
+        </div>
         
+      </div>
+      
     </p>
-    <br>
+        
+    
+
   </div>
 </div>
 
